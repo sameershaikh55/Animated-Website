@@ -1,0 +1,40 @@
+.text_on_image {
+	position: absolute;
+	/* bottom: 0;
+	right: 0; */
+	top: 50%;
+	left: 50%;
+	transform: translate(-45%, -64%);
+	/* text-align: center; */
+}
+
+.slogan {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 70px;
+	letter-spacing: 2px;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.slogan_word {
+	color: #66fcf1;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.slogan_below {
+	margin-left: 8px;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 16px;
+	word-spacing: 2px;
+	letter-spacing: 2px;
+	margin-top: 2px;
+}
+
+h3 {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 18px;
+	letter-spacing: 1.5px;
+	margin-bottom: -4px;
+}

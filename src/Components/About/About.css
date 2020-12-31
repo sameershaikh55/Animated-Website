@@ -1,0 +1,135 @@
+.about_container {
+	background: #fff;
+	height: 100vh;
+	width: 100%;
+}
+
+.about_boxes {
+	display: flex;
+	justify-content: space-evenly;
+	margin: auto;
+	width: 1100px;
+	margin-top: 60px;
+}
+
+.box {
+	padding: 32px 26px;
+	width: 340px;
+	text-align: center;
+}
+
+.box:hover {
+	background: #fff;
+	box-shadow: 1px 2px 6px #ccc;
+	transform: scale(1.1);
+	transition-duration: 0.5s;
+	border-radius: 5px;
+}
+
+.box_heading_styling {
+	font-size: 20px;
+	margin-bottom: 12px;
+}
+
+.box_lorem {
+	line-height: 22px;
+}
+/* ---------------------------------- */
+
+/* states styling */
+
+.states_container {
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	margin: auto;
+	width: 1100px;
+	margin-top: 80px;
+	padding: 25px 10px;
+	border-radius: 8px;
+	background: linear-gradient(
+		rgba(109, 240, 231, 0.849),
+		rgba(99, 252, 242, 0.486)
+	);
+	box-shadow: 1px 1px 5px rgba(109, 240, 231, 0.726);
+}
+
+.states_number {
+	font-size: 32px;
+	letter-spacing: 2px;
+	font-weight: lighter;
+}
+
+.states_text {
+	letter-spacing: 1.5px;
+	font-weight: bold;
+	margin-top: 8px;
+}
+/* ------------------------------------ */
+
+/* trainers portion styling */
+.trainers_container {
+	margin-top: 100px;
+	margin-bottom: 50px;
+	margin-right: auto;
+	margin-left: auto;
+	width: 1100px;
+}
+
+.trainers_heading {
+	margin-bottom: 32px;
+	text-align: center;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	word-spacing: 3px;
+}
+
+.trainer_boxes_container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.trainer_img {
+	height: 350px;
+	width: 340px;
+}
+
+/* trainer animation box container */
+.animation_box_container {
+	position: relative;
+	margin-top: -80px;
+	margin-left: auto;
+	margin-right: auto;
+	background: #fff;
+	text-align: center;
+	width: 230px;
+	box-shadow: 1px 1px 3px rgb(204, 204, 204);
+	height: 71px;
+	overflow: hidden;
+	padding: 10px 8px;
+	border-radius: 5px;
+}
+
+.animation_box_container:hover {
+	transform: scale(1.1);
+	height: 170px;
+	transition-duration: 0.8s;
+	transition-delay: 0.1s;
+	box-shadow: 1px 2px 5px rgb(151, 151, 151);
+}
+
+.social_media_icons {
+	margin: 8px 0;
+}
+
+.trainer_name {
+	margin-bottom: 3px;
+}
+
+.trainer_speciality {
+	margin-bottom: 6px;
+	color: #1f2833;
+	letter-spacing: 1.2px;
+	font-weight: bold;
+	/* text-shadow: 0.1px 0.5px 2px black; */
+}

@@ -1,0 +1,45 @@
+ul {
+	display: inline-flex;
+}
+
+ul li {
+	font-size: 4.5mm;
+	padding: 18px 0 8px 0;
+	margin-right: 30px;
+	list-style-type: none;
+}
+
+ul li a {
+	color: #fff;
+	/* color: #53c0bb; */
+	text-decoration: none;
+	letter-spacing: 1.5px;
+}
+
+.navbar_wrapper {
+	background-color: rgba(31, 40, 51, 0.7);
+}
+
+.navbar_container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 12px 0;
+	margin: auto;
+	width: 1100px;
+}
+
+.brand_name {
+	color: #66fcf1;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-size: 0.8cm;
+	padding-top: 8px;
+}
+
+/* .active_class {
+	color: #66fcf1;
+	font-weight: bold;
+	padding-bottom: 18px;
+	border-bottom: 2px solid #66fcf1;
+} */
