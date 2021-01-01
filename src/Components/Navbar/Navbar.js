@@ -8,13 +8,14 @@ import "aos/dist/aos.css";
 import "./Navbar.css";
 import "../../App.css";
 
-const Navbar = () => {
+const Navbar = ({ forClass }) => {
 	useEffect(() => {
 		AOS.init();
 	}, []);
 
 	return (
 		<div
+			id="homePage"
 			data-aos="fade-down"
 			data-aos-duration="600"
 			className="navbar_wrapper"
@@ -26,16 +27,24 @@ const Navbar = () => {
 				<div>
 					<ul>
 						<li>
-							<a>Home</a>
+							<a id={forClass} className="navbar_nav" href="#homePage">
+								Home
+							</a>
 						</li>
 						<li>
-							<a>About</a>
+							<a className="navbar_nav" href="#aboutPage">
+								About
+							</a>
 						</li>
 						<li>
-							<a>Service</a>
+							<a className="navbar_nav" href="#servicPage">
+								Service
+							</a>
 						</li>
 						<li>
-							<a>Contact</a>
+							<a className="navbar_nav" href="#contactPage">
+								Contact
+							</a>
 						</li>
 					</ul>
 				</div>

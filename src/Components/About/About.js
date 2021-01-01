@@ -36,7 +36,7 @@ const About = () => {
 		AOS.init();
 	}, []);
 	return (
-		<div className="about_container">
+		<div id="aboutPage" className="about_container">
 			<div
 				data-aos="fade-down"
 				data-aos-offset="200"

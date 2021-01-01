@@ -14,7 +14,7 @@ function App() {
 	return (
 		<div>
 			<div className="for_bg_image">
-				<Navbar />
+				<Navbar forClass="active_page" />
 			</div>
 			<div className="all_pages_container">
 				<Home />

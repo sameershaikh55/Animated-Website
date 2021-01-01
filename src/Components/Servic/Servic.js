@@ -23,7 +23,7 @@ const Servic = () => {
 	}, []);
 	// ---------------------
 	return (
-		<div>
+		<div id="servicPage">
 			<div
 				data-aos="fade-down-left"
 				data-aos-offset="450"

@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import "./Footer.css";
 
+import Navbar from "../Navbar/Navbar";
+
 // importing material ui icons
 import LocationOnIcon from "@material-ui/icons/LocationOn";
 import PhoneIcon from "@material-ui/icons/Phone";
@@ -89,6 +91,7 @@ const Footer = () => {
 					</div>
 				</div>
 			</div>
+			<Navbar />
 			<div className="footer_copyright_container">
 				<footer className="footer_copyright_inner">
 					© 2020 Copyright: SAMEER_SHAIKH
