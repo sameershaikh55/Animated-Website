@@ -1,13 +1,20 @@
+import React, { useEffect } from "react";
 import { Button } from "@material-ui/core";
-import React from "react";
 import "./Registration.css";
 
 // import image
 import RegistrationImage from "../../../Images/registration_form_img.jpg";
 
+// importing AOS for animation
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const Registration = () => {
+	useEffect(() => {
+		AOS.init({ offset: "500", duration: "1000" });
+	}, []);
 	return (
-		<div className="r_bg">
+		<div data-aos="zoom-in-up" className="r_bg">
 			<div className="registration_form_container">
 				<div className="forms_left_side">
 					<h1 className="form_heading">Register now</h1>

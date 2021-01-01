@@ -7,6 +7,14 @@
 	font-family: "Lato", sans-serif;
 }
 
+::-webkit-scrollbar {
+	display: none;
+}
+
+/* ::-webkit-scrollbar {
+	display: none;
+} */
+
 .for_bg_image {
 	background-image: linear-gradient(
 			rgba(31, 40, 51, 0.5),

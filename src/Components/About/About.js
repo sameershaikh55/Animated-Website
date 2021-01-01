@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./About.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -6,6 +6,10 @@ import {
 	faDumbbell,
 	faTrophy,
 } from "@fortawesome/free-solid-svg-icons";
+
+// importing AOS for animations
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 // importing trainer images
 import Tr_1 from "../../Images/about_page_tr_1.jpg";
@@ -18,16 +22,27 @@ import InstagramIcon from "@material-ui/icons/Instagram";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import PinterestIcon from "@material-ui/icons/Pinterest";
 
+// import useWebAnimations, { fadeInRight } from "@wellyshen/use-web-animations";
+
 const About = () => {
+	// const { ref } = useWebAnimations({ ...fadeInRight });
 	const iconsStyling = {
 		margin: "5px",
 		zoom: "0.9",
 		cursor: "pointer",
 		color: "rgb(102,252,241)",
 	};
+	useEffect(() => {
+		AOS.init();
+	}, []);
 	return (
 		<div className="about_container">
-			<div className="about_boxes">
+			<div
+				data-aos="fade-down"
+				data-aos-offset="200"
+				data-aos-duration="1000"
+				/*ref={ref}*/ className="about_boxes"
+			>
 				<div className="box">
 					<FontAwesomeIcon
 						icon={faTrophy}
@@ -70,7 +85,12 @@ const About = () => {
 			</div>
 
 			{/* states */}
-			<div className="states_container">
+			<div
+				data-aos="flip-up"
+				data-aos-offset="200"
+				data-aos-duration="1000"
+				className="states_container"
+			>
 				<div>
 					<h2 className="states_number">98</h2>
 					<p className="states_text">PROGRAMS</p>
@@ -90,7 +110,12 @@ const About = () => {
 			</div>
 
 			{/* trainers */}
-			<div className="trainers_container">
+			<div
+				data-aos="slide-up"
+				data-aos-offset="230"
+				data-aos-duration="1500"
+				className="trainers_container"
+			>
 				<h1 className="trainers_heading"> Expert Trainers </h1>
 				<div className="trainer_boxes_container">
 					<div className="trainer_box">
@@ -101,6 +126,7 @@ const About = () => {
 							<p>
 								non numquam eius modi tempora incidunt labore magnam voluptatem.
 							</p>
+							{/* social media icons portion */}
 							<div className="social_media_icons">
 								<FacebookIcon style={iconsStyling} />
 								<InstagramIcon style={iconsStyling} />
@@ -117,6 +143,7 @@ const About = () => {
 							<p>
 								non numquam eius modi tempora incidunt labore magnam voluptatem.
 							</p>
+							{/* social media icons portion */}
 							<div className="social_media_icons">
 								<FacebookIcon style={iconsStyling} />
 								<InstagramIcon style={iconsStyling} />
@@ -133,6 +160,7 @@ const About = () => {
 							<p>
 								non numquam eius modi tempora incidunt labore magnam voluptatem.
 							</p>
+							{/* social media icons portion */}
 							<div className="social_media_icons">
 								<FacebookIcon style={iconsStyling} />
 								<InstagramIcon style={iconsStyling} />

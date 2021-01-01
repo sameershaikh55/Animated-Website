@@ -1,10 +1,12 @@
 import React from "react";
 import "./Home.css";
 import { Button } from "@material-ui/core";
+import useWebAnimations, { fadeIn } from "@wellyshen/use-web-animations";
 
 const Home = () => {
+	const { ref } = useWebAnimations({ ...fadeIn });
 	return (
-		<div className="text_on_image">
+		<div ref={ref} className="text_on_image">
 			<h3> shape your body </h3>
 			<h1 className="slogan">
 				be <span className="slogan_word"> strong </span> <br /> training hard

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Programs.css";
 
 // import services images
@@ -11,6 +11,10 @@ import PersonalTraining from "../../../Images/service_personal_training.jpg";
 import Cardio from "../../../Images/service_cardio.jpg";
 import CrossFit from "../../../Images/service_cross_fit.jpg";
 import Box from "../../../Images/service_box.jpg";
+
+// importing AOS for animation
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Programs = () => {
 	// styling for elemnts of image
@@ -27,11 +31,27 @@ const Programs = () => {
 	};
 	// ---------------------------------
 
+	useEffect(() => {
+		AOS.init();
+	}, []);
+
 	return (
 		<div className="programs_page_container">
-			<h1 className="programs_heading">Unlimited Classes</h1>
+			<h1
+				data-aos="fade-down"
+				data-aos-offset="200"
+				data-aos-duration="1000"
+				className="programs_heading"
+			>
+				Unlimited Classes
+			</h1>
 			<div>
-				<div className="programs_row">
+				<div
+					data-aos="fade-left"
+					data-aos-offset="200"
+					data-aos-duration="1000"
+					className="programs_row"
+				>
 					<div className="program_card">
 						<img className="programs_images" src={Yoga} alt="loading" />
 						<h2 style={stylingData}>Yoga</h2>
@@ -47,7 +67,12 @@ const Programs = () => {
 				</div>
 				<br />
 				<br />
-				<div className="programs_row">
+				<div
+					data-aos="fade-right"
+					data-aos-offset="200"
+					data-aos-duration="1000"
+					className="programs_row"
+				>
 					<div className="program_card">
 						<img className="programs_images" src={Dance} alt="loading" />
 						<h2 style={stylingData}>Dance</h2>
@@ -67,7 +92,12 @@ const Programs = () => {
 				</div>
 				<br />
 				<br />
-				<div className="programs_row">
+				<div
+					data-aos="fade-left"
+					data-aos-offset="200"
+					data-aos-duration="1000"
+					className="programs_row"
+				>
 					<div className="program_card">
 						<img className="programs_images" src={Box} alt="loading" />
 						<h2 style={stylingData}>Box</h2>

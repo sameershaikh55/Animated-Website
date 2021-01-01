@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Footer.css";
 
 // importing material ui icons
@@ -9,6 +9,10 @@ import FacebookIcon from "@material-ui/icons/Facebook";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import PinterestIcon from "@material-ui/icons/Pinterest";
+
+// importing AOS for animation
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Footer = () => {
 	const addressDetail = {
@@ -27,8 +31,18 @@ const Footer = () => {
 		marginTop: "18px",
 		color: "#66FCF1",
 	};
+
+	useEffect(() => {
+		AOS.init();
+	}, []);
+
 	return (
-		<div className="footer_page_container">
+		<div
+			data-aos="fade-up"
+			data-aos-duration="1200"
+			data-aos-offset="120"
+			className="footer_page_container"
+		>
 			<div className="footer_boxes_wrapper">
 				<div className="footer_box1">
 					<div>
