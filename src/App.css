@@ -40,3 +40,57 @@ html {
 	margin: auto;
 	width: 1100px;
 } */
+
+.ErrorPage .errorImg,
+.ErrorPage .errorText {
+	display: none;
+}
+
+@media screen and (max-width: 1100px) {
+	.for_bg_image {
+		display: none;
+	}
+	.about_container {
+		display: none;
+	}
+	.contact_us_page_container {
+		display: none;
+	}
+	.footer_page_container {
+		display: none;
+	}
+	.text_on_image {
+		display: none;
+	}
+	.navbar_wrapper {
+		display: none;
+	}
+	.s_bg {
+		display: none;
+	}
+	.programs_page_container {
+		display: none;
+	}
+	.r_bg {
+		display: none;
+	}
+	.ErrorPage .errorImg {
+		display: block;
+		height: 35rem;
+		width: 100%;
+		margin-top: 2rem;
+	}
+	.ErrorPage .errorText {
+		display: block;
+		margin: auto;
+		letter-spacing: 1.5px;
+		word-spacing: 2px;
+		font-size: 1.5rem;
+		text-align: center;
+		width: 840px;
+		margin-top: 10px;
+		background-color: #66fcf1;
+		padding: 10px;
+		border-radius: 6px;
+	}
+}

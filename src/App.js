@@ -10,9 +10,17 @@ import Contact from "./Components/Contact/Contact";
 import Navbar from "./Components/Navbar/Navbar";
 import Footer from "../src/Components/Footer/Footer";
 
+// Error Image
+import ErrImg from "./Images/ErrorPageSvg.svg";
+
 function App() {
 	return (
-		<div>
+		<div className="ErrorPage">
+			<img src={ErrImg} alt="ErrorPage" className="errorImg" />
+			<h4 className="errorText">
+				This Website is not Responsive for Small Devices, Please Open it on your
+				Laptop Or Desktop...!!!
+			</h4>
 			<div className="for_bg_image">
 				<Navbar forClass="active_page" />
 			</div>
